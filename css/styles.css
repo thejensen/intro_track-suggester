@@ -15,7 +15,7 @@ body {
 }
 
 form {
-  background-color: rgba(255, 255, 255, .8);
+  background-color: rgba(255, 255, 255, .9);
 }
 
 .row {
@@ -31,16 +31,15 @@ form {
   padding-left: 10px;
 }
 
-.form-check {
-  padding-left: 10px;
-}
-
-button {
-  padding: 20px;
+#button {
+  display: block;
+  margin: auto;
 }
 
 .preview {
   text-align: center;
+  background-color: rgba(255, 255, 255, .9);
+  padding: 20px;
 }
 
 img {
