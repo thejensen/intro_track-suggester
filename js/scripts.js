@@ -96,7 +96,9 @@ $(document).ready(function() {
 
 // figure out how get the submit to trigger a nice error message if they don't actually submit any answers!
 
-    if (rubyRails === phpDrupal) {
+    if (rubyRails + phpDrupal + cNet + cssDesign + javaAndroid === 0) {
+      alert("Please fill out the survey to see your future!");
+    } else if (rubyRails === phpDrupal) {
       alert("You're tied between Ruby and .php!")
       $(".result").hide();
       $("#rubyRails").show();
