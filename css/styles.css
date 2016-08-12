@@ -1,3 +1,24 @@
 .result {
   display: none;
 }
+
+
+.heading {
+  text-align: center;
+  background-color: rgba(255, 255, 255, .6);
+  padding: 20px;
+  margin: 60px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background-image: url("../img/notes.jpeg");
+  -webkit-background-size: cover;
+}
+
+form {
+  background-color: rgba(255, 255, 255, .5);
+}

@@ -11,19 +11,21 @@
   </head>
   <body>
     <div class="container">
-      <h1>Epicodus Track Suggester</h1>
-      <p>Welcome to the Epicodus Track Suggester. The following survey is for you if:
-          <ul>
-            <li>If you're unclear on which track to take at Epicodus</li>
-            <li>You're interested to see if your chosen track matches your true interests</li>
-            <li> are open to suggestion</li>
-          </ul>
-          Based on your preferences, you'll see what your future holds!
-      </p>
+      <div class="heading">
+        <h1>Epicodus Track Suggester</h1>
+        <p>Welcome to the Epicodus Track Suggester. The following survey is for you if:
+            <ul>
+              <li>If you're unclear on which track to take at Epicodus</li>
+              <li>You're interested to see if your chosen track matches your true interests</li>
+              <li> are open to suggestion</li>
+            </ul>
+            Based on your preferences, you'll see what your future holds!
+        </p>
+      </div>
 <!-- Begin form -->
       <form>
         <fieldset class="form-group row">
-          <legend class="col-form-legend col-sm-2">What kind of organization are you interested in?</legend>
+          <legend class="col-form-legend col-sm-2" id="orgInterest">What kind of organization are you interested in?</legend>
           <div class="form-check">
             <label for="1">A startup</label>
             <input class="form-check-input" type="radio" name="companyType" value="1">
@@ -45,11 +47,15 @@
             <input class="form-check-input" type="radio" name="companyType" value="5">
           </div>
         </fieldset>
+ 
+
+
+
       <button type="submit" class="btn btn-default">Let's Go!</button>
       </form>
 <!-- END FORM -->
-<!-- Begin results -->
-      <div class="result" id="rubyRails">
+<!-- Begin results ...want a modal girl?! -->
+      <div class="result rubyRails">
         <p>Ruby/Rails</p>
       </div>
       <div class="result" id="phpDrupal">
