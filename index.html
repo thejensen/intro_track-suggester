@@ -24,30 +24,57 @@
       </div>
 <!-- Begin form -->
       <form>
+<!-- Question 1 -->
         <fieldset class="form-group row">
           <legend class="col-form-legend col-sm-2" id="orgInterest">What kind of organization are you interested in?</legend>
           <div class="form-check">
             <label for="1">A startup</label>
-            <input class="form-check-input" type="radio" name="companyType" value="1">
+            <input class="form-check-input" type="radio" name="orgType" value="1">
           </div>
           <div class="form-check">
             <label for="2">An agency, businessnes, or brands</label>
-            <input class="form-check-input" type="radio" name="companyType" value="2">
+            <input class="form-check-input" type="radio" name="orgType" value="2">
           </div>
           <div class="form-check">
             <label for="3">I'm flexible, but lean toward older institutions</label>
-            <input class="form-check-input" type="radio" name="companyType" value="3">
+            <input class="form-check-input" type="radio" name="orgType" value="3">
           </div>
           <div class="form-check">
             <label for="4">As long as I'm designing, I'm happy</label>
-            <input class="form-check-input" type="radio" name="companyType" value="4">
+            <input class="form-check-input" type="radio" name="orgType" value="4">
           </div>
           <div class="form-check">
             <label for="5">Enterprise level company</label>
-            <input class="form-check-input" type="radio" name="companyType" value="5">
+            <input class="form-check-input" type="radio" name="orgType" value="5">
           </div>
         </fieldset>
- 
+<!-- Question 2 -->
+        <fieldset class="form-group row">
+          <legend class="col-form-legend col-sm-2" id="appInterest">What kind of applications do you want to work on?</legend>
+          <div class="form-check">
+            <label for="1">A web-app that involves interacting with dynamic content</label>
+            <input class="form-check-input" type="radio" name="appType" value="1">
+          </div>
+          <div class="form-check">
+            <label for="2">Content heavy websites</label>
+            <input class="form-check-input" type="radio" name="appType" value="2">
+          </div>
+          <div class="form-check">
+            <label for="3">High-performance applications</label>
+            <input class="form-check-input" type="radio" name="appType" value="3">
+          </div>
+          <div class="form-check">
+            <label for="4">The kind I get to style myself</label>
+            <input class="form-check-input" type="radio" name="appType" value="4">
+          </div>
+          <div class="form-check">
+            <label for="5">A large organization's internal software</label>
+            <input class="form-check-input" type="radio" name="appType" value="5">
+          </div>
+        </fieldset>
+<!-- Question 3 -->
+
+
 
 
 
@@ -55,7 +82,7 @@
       </form>
 <!-- END FORM -->
 <!-- Begin results ...want a modal girl?! -->
-      <div class="result rubyRails">
+      <div class="result" id="rubyRails">
         <p>Ruby/Rails</p>
       </div>
       <div class="result" id="phpDrupal">
