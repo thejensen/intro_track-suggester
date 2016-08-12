@@ -10,7 +10,9 @@ _The Epicodus Track Suggester will ask you a few questions about your programmin
 
 ## Setup/Installation Requirements
 
-* Chrome compatibile
+* No special requirement other than access a computer and a modern browser.
+* Chrome compatible guaranteed!
+* You can view this project here: http://thejensen.github.io/track-suggester
 
 ## Known Bugs
 
