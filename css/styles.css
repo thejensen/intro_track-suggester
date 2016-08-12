@@ -39,6 +39,10 @@ button {
   padding: 20px;
 }
 
+.preview {
+  text-align: center;
+}
+
 img {
   display: block;
   margin: auto;

@@ -100,6 +100,7 @@ $(document).ready(function() {
       alert("Please fill out the survey to see your future!");
     } else if (rubyRails === phpDrupal) {
       alert("You're tied between Ruby and .php!")
+      $(".preview").hide();
       $(".result").hide();
       $("#rubyRails").show();
       $("#phpDrupal").show();
@@ -108,30 +109,35 @@ $(document).ready(function() {
       }, 2000);
 // Is there a cool way to get all the ties, e.g. rubyRails === * or something?
     } else if (cNet >= rubyRails && cNet >= phpDrupal && cNet >= javaAndroid && cNet >= cssDesign) {
+      $(".preview").hide();
       $(".result").hide();
       $("#cNet").show();
       $('html, body').animate({
           scrollTop: $("#cNet").offset().top
       }, 2000);
     } else if (rubyRails >= phpDrupal && rubyRails >= javaAndroid && rubyRails >= cssDesign && rubyRails >= cNet) {
+      $(".preview").hide();
       $(".result").hide();
       $("#rubyRails").show();
       $('html, body').animate({
           scrollTop: $("#rubyRails").offset().top
       }, 2000);
     } else if (phpDrupal >= rubyRails && phpDrupal >= javaAndroid && phpDrupal >= cssDesign && phpDrupal >= cNet) {
+      $(".preview").hide();
       $(".result").hide();
       $("#phpDrupal").show();
       $('html, body').animate({
           scrollTop: $("#phpDrupal").offset().top
       }, 2000);
     } else if (javaAndroid >= rubyRails && javaAndroid >= phpDrupal && javaAndroid >= cssDesign && javaAndroid >= cNet) {
+      $(".preview").hide();
       $(".result").hide();
       $("#javaAndroid").show();
       $('html, body').animate({
           scrollTop: $("#javaAndroid").offset().top
       }, 2000);
     } else if (cssDesign >= rubyRails && cssDesign >= phpDrupal && cssDesign >= javaAndroid && cssDesign >= cNet) {
+      $(".preview").hide();
       $(".result").hide();
       $("#cssDesign").show();
       $('html, body').animate({
