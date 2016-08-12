@@ -13,71 +13,105 @@
     <div class="container">
       <div class="heading">
         <h1>Epicodus Track Suggester</h1>
-        <p>Welcome to the Epicodus Track Suggester. The following survey is for you if:
+        <p>Welcome to the Epicodus Track Suggester.
             <ul>
-              <li>If you're unclear on which track to take at Epicodus</li>
-              <li>You're interested to see if your chosen track matches your true interests</li>
-              <li> are open to suggestion</li>
+              <li>Which track is for me?</li>
+              <li>Do my interests match my results?</li>
+              <li>I'm open to the possibilities!</li>
             </ul>
             Based on your preferences, you'll see what your future holds!
         </p>
       </div>
 <!-- Begin form -->
-      <form>
+      <form id="inputs">
 <!-- Question 1 -->
         <fieldset class="form-group row">
-          <legend class="col-form-legend col-sm-2" id="orgInterest">What kind of organization are you interested in?</legend>
+          <legend class="col-form-legend col-md-2 question" id="orgInterest">What kind of organization are you interested in?</legend>
           <div class="form-check">
-            <label for="1">A startup</label>
             <input class="form-check-input" type="radio" name="orgType" value="1">
+            <label for="1">A startup</label>
           </div>
           <div class="form-check">
-            <label for="2">An agency, businessnes, or brands</label>
             <input class="form-check-input" type="radio" name="orgType" value="2">
+            <label for="2">An agency, businessnes, or brands</label>
           </div>
           <div class="form-check">
-            <label for="3">I'm flexible, but lean toward older institutions</label>
             <input class="form-check-input" type="radio" name="orgType" value="3">
+            <label for="3">I'm flexible, but lean toward older institutions</label>
           </div>
           <div class="form-check">
-            <label for="4">As long as I'm designing, I'm happy</label>
             <input class="form-check-input" type="radio" name="orgType" value="4">
+            <label for="4">As long as I'm designing, I'm happy</label>
           </div>
           <div class="form-check">
-            <label for="5">Enterprise level company</label>
             <input class="form-check-input" type="radio" name="orgType" value="5">
+            <label for="5">Enterprise level company</label>
           </div>
         </fieldset>
 <!-- Question 2 -->
         <fieldset class="form-group row">
-          <legend class="col-form-legend col-sm-2" id="appInterest">What kind of applications do you want to work on?</legend>
+          <legend class="col-form-legend col-md-2 question" id="appInterest">What kind of applications do you want to work on?</legend>
           <div class="form-check">
-            <label for="1">A web-app that involves interacting with dynamic content</label>
             <input class="form-check-input" type="radio" name="appType" value="1">
+              <label for="1">A web-app that involves interacting with dynamic content</label>
           </div>
           <div class="form-check">
-            <label for="2">Content heavy websites</label>
             <input class="form-check-input" type="radio" name="appType" value="2">
+            <label for="2">Content heavy websites</label>
           </div>
           <div class="form-check">
-            <label for="3">High-performance applications</label>
             <input class="form-check-input" type="radio" name="appType" value="3">
+            <label for="3">High-performance applications</label>
           </div>
           <div class="form-check">
-            <label for="4">The kind I get to style myself</label>
             <input class="form-check-input" type="radio" name="appType" value="4">
+            <label for="4">The kind I get to style myself</label>
           </div>
           <div class="form-check">
-            <label for="5">A large organization's internal software</label>
             <input class="form-check-input" type="radio" name="appType" value="5">
+            <label for="5">A large organization's internal software</label>
           </div>
         </fieldset>
 <!-- Question 3 -->
-
-
-
-
-
+        <fieldset class="form-group row">
+          <legend class="col-form-legend col-md-2 question" id="endInterest">Are you gravitating toward front-end or back-end development?</legend>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="endType" value="1">
+            <label for="1">Front-end</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check" type="radio" name="endType" value="2">
+            <label for="1">Back-end</label>
+          </div>
+        </fieldset>
+<!-- Question 4 -->
+        <fieldset class="form-group row">
+          <legend class="col-form-legend col-md-2 question" id="mobileInterest">Are you interested in making mobile apps?</legend>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="mobileType" value="1">
+            <label for="1">Definitely!</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="mobileType" value="2">
+            <label for="2">I'm more interested in performance or big data, personally</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="mobileType" value="3">
+            <label for="3">Not sure yet, but open to it</label>
+          </div>
+        </fieldset>
+<!-- Question 5 -->
+        <fieldset class="form-group row">
+          <legend class="col-form-legend col-md-2 question" id="genericInterest">Is it important that the first thing you learn has been historically used?</legend>
+          <div class="form-check>"
+            <input class="form-check-input" type="radio" name="genericType" value="1">
+            <label for="1">Yes, I prefer existing structure, and loads of documentation</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="genericType" value="2">
+            <label for="2">No, I'd prefer embark on the future now!</label>
+          </div>
+        </fieldset>
+<!-- End Questions  -->
       <button type="submit" class="btn btn-default">Let's Go!</button>
       </form>
 <!-- END FORM -->
