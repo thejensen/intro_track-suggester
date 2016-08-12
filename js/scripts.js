@@ -95,20 +95,26 @@ $(document).ready(function() {
 
     if (rubyRails === phpDrupal) {
       alert("You're tied between Ruby and .php!")
+      $(".result").hide();
       $("#rubyRails").show();
       $("#phpDrupal").show();
 // Is there a cool way to get all the ties, e.g. rubyRails === * or something?
-    } else if (rubyRails > phpDrupal && rubyRails > javaAndroid && rubyRails > cssDesign && rubyRails > cNet) {
-      $("#rubyRails").show();
-    } else if (phpDrupal > rubyRails && phpDrupal > javaAndroid && phpDrupal > cssDesign && phpDrupal > cNet) {
-      $("#phpDrupal").show();
-    } else if (javaAndroid > rubyRails && javaAndroid > phpDrupal && javaAndroid > cssDesign && javaAndroid > cNet) {
-      $("#javaAndroid").show();
-    } else if (cssDesign > rubyRails && cssDesign > phpDrupal && cssDesign > javaAndroid && cssDesign > cNet) {
-      $("#cssDesign").show();
-    } else if (cNet > rubyRails && cNet > phpDrupal && cNet > javaAndroid && cNet > cssDesign) {
+    } else if (cNet >= rubyRails && cNet >= phpDrupal && cNet >= javaAndroid && cNet >= cssDesign) {
+      $(".result").hide();
       $("#cNet").show();
-    }
+    } else if (rubyRails >= phpDrupal && rubyRails >= javaAndroid && rubyRails >= cssDesign && rubyRails >= cNet) {
+      $(".result").hide();
+      $("#rubyRails").show();
+    } else if (phpDrupal >= rubyRails && phpDrupal >= javaAndroid && phpDrupal >= cssDesign && phpDrupal >= cNet) {
+      $(".result").hide();
+      $("#phpDrupal").show();
+    } else if (javaAndroid >= rubyRails && javaAndroid >= phpDrupal && javaAndroid >= cssDesign && javaAndroid >= cNet) {
+      $(".result").hide();
+      $("#javaAndroid").show();
+    } else if (cssDesign >= rubyRails && cssDesign >= phpDrupal && cssDesign >= javaAndroid && cssDesign >= cNet) {
+       $(".result").hide();
+      $("#cssDesign").show();
 
+    }
   });
 });
