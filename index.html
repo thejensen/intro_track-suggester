@@ -15,140 +15,147 @@
         <h1>Epicodus Track Suggester</h1>
         <p>Welcome to the Epicodus Track Suggester.<br>
         This questionaire is for you if you've ever thought:
-            <ul>
-              <li>Which track is for me?</li>
-              <li>Do my interests match my results?</li>
-              <li>I'm open to the possibilities!</li>
-            </ul>
-            Alright, let's see what your future holds.
+          <ul>
+            <li>Which track is for me?</li>
+            <li>Do my interests match my results?</li>
+            <li>I'm open to the possibilities!</li>
+          </ul>
         </p>
       </div>
 <!-- Begin form -->
-      <form id="inputs">
-<!-- Question 1 -->
-        <fieldset class="form-group row">
-          <legend class="col-form-legend col-md-2 question" id="orgInterest">What kind of organization are you interested in?</legend>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="orgType" value="1">
-            <label for="1">A startup</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="orgType" value="2">
-            <label for="2">An agency, businessnes, or brands</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="orgType" value="3">
-            <label for="3">I'm flexible, but lean toward older institutions</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="orgType" value="4">
-            <label for="4">As long as I'm designing, I'm happy</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="orgType" value="5">
-            <label for="5">Enterprise level company</label>
-          </div>
-        </fieldset>
-<!-- Question 2 -->
-        <fieldset class="form-group row">
-          <legend class="col-form-legend col-md-2 question" id="appInterest">What kind of applications do you want to work on?</legend>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="appType" value="1">
-              <label for="1">Interact with dynamic content in a web-app</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="appType" value="2">
-            <label for="2">Content heavy websites</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="appType" value="3">
-            <label for="3">High-performance applications</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="appType" value="4">
-            <label for="4">The kind I get to style myself</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="appType" value="5">
-            <label for="5">A large organization's internal software</label>
-          </div>
-        </fieldset>
-<!-- Question 3 -->
-        <fieldset class="form-group row">
-          <legend class="col-form-legend col-md-2 question" id="endInterest">Are you gravitating toward front-end or back-end development?</legend>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="endType" value="1">
-            <label for="1">Front-end</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check" type="radio" name="endType" value="2">
-            <label for="1">Back-end</label>
-          </div>
-        </fieldset>
-<!-- Question 4 -->
-        <fieldset class="form-group row">
-          <legend class="col-form-legend col-md-2 question" id="mobileInterest">Are you interested in making mobile apps?</legend>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="mobileType" value="1">
-            <label for="1">Definitely!</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="mobileType" value="2">
-            <label for="2">Meh, I prefer performance and big-data</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="mobileType" value="3">
-            <label for="3">Not sure yet, but open to it</label>
-          </div>
-        </fieldset>
-<!-- Question 5 -->
-        <fieldset class="form-group row">
-          <legend class="col-form-legend col-md-2 question" id="genericInterest">Is it important that the first thing you learn has been historically used?</legend>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="genericType" value="1">
-            <label for="1">Yes, give me structure and documentation</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="genericType" value="2">
-            <label for="2">No, I'd prefer embark on the future now!</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="genericType" value="3">
-            <label for="3">Aren't we all living in the same timeline?</label>
-          </div>
-        </fieldset>
+      <div class="row">
+        <div class="col-sm-6">
+          <form id="inputs">
+    <!-- Question 1 -->
+            <fieldset class="form-group row">
+              <legend class="col-form-legend col-xl-2 question" id="orgInterest">What kind of organization are you interested in?</legend>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="orgType" value="1">
+                <label for="1">A startup</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="orgType" value="2">
+                <label for="2">An agency, businessnes, or brands</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="orgType" value="3">
+                <label for="3">I'm flexible, but lean toward older institutions</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="orgType" value="4">
+                <label for="4">As long as I'm designing, I'm happy</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="orgType" value="5">
+                <label for="5">Enterprise level company</label>
+              </div>
+            </fieldset>
+    <!-- Question 2 -->
+            <fieldset class="form-group row">
+              <legend class="col-form-legend col-xl-2 question" id="appInterest">What kind of applications do you want to work on?</legend>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="appType" value="1">
+                  <label for="1">Interact with dynamic content in a web-app</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="appType" value="2">
+                <label for="2">Content heavy websites</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="appType" value="3">
+                <label for="3">High-performance applications</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="appType" value="4">
+                <label for="4">The kind I get to style myself</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="appType" value="5">
+                <label for="5">A large organization's internal software</label>
+              </div>
+            </fieldset>
+    <!-- Question 3 -->
+            <fieldset class="form-group row">
+              <legend class="col-form-legend col-xl-2 question" id="endInterest">Are you gravitating toward front-end or back-end development?</legend>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="endType" value="1">
+                <label for="1">Front-end</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check" type="radio" name="endType" value="2">
+                <label for="1">Back-end</label>
+              </div>
+            </fieldset>
+    <!-- Question 4 -->
+            <fieldset class="form-group row">
+              <legend class="col-form-legend col-xl-2 question" id="mobileInterest">Are you interested in making mobile apps?</legend>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="mobileType" value="1">
+                <label for="1">Definitely!</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="mobileType" value="2">
+                <label for="2">Meh, I prefer performance and big-data</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="mobileType" value="3">
+                <label for="3">Not sure yet, but open to it</label>
+              </div>
+            </fieldset>
+    <!-- Question 5 -->
+            <fieldset class="form-group row">
+              <legend class="col-form-legend col-xl-2 question" id="genericInterest">Is it important that the first language you learn has deep roots?</legend>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="genericType" value="1">
+                <label for="1">Yes, give me structure and documentation</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="genericType" value="2">
+                <label for="2">No, I'd prefer embark on the future now!</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="genericType" value="3">
+                <label for="3">Aren't we all living in the same timeline?</label>
+              </div>
+            </fieldset>
 <!-- End Questions  -->
-      <button type="submit" class="btn btn-default">Let's Go!</button>
-      </form>
+            <button type="submit" class="btn btn-default" id="button">Let's Go!</button>
+          </form>
+        </div>
 <!-- END FORM -->
 <!-- Begin results ...want a modal girl?! -->
-      <div class="result" id="rubyRails">
-        <h2>Ruby/Rails</h2>
-          <p>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.
-          </p>
-      </div>
-      <div class="result" id="phpDrupal">
-        <h2>PHP/Drupal</h2>
-        <p>PHP is most used in content-heavy websites with relatively little user interaction. The most popular content management systems - Wordpress, Drupal, and Joomla - are all written in PHP, and everything from local restaurants' websites up through large complex government deployments are built with these tools. If you're keen to work for an agency that builds websites for clients, or if you like the idea of building out sites for brands, businesses, and organizations, PHP is a great direction to go.
-        </p>
-      </div>
-      <div class="result" id="javaAndroid">
-        <h2>Java/Android</h2>
-          <p>Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has very been popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.
-          </p>
-      </div>
-      <div class="result" id="cssDesign">
-        <h2>CSS/Design</h2>
-          <p>The CSS (Cascading Style Sheets) course builds on the fundamentals from Intro to Programming. It teaches students how to style web pages using complex, responsive layouts, all the while exposing them to the latest CSS tools, tricks, and features used every day by front-end developers and designers.<br><br>
-          CSS is one of the core languages of the web and is an integral part of front-end development. CSS – along with HTML and JavaScript – helps front-end developers control what the end user of a website can see and do.
-          </p>
-      </div>
-      <div class="result" id="cNet">
-        <h2>C#/.NET</h2>
-          <p>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.
-          </p>
-      </div>
+          <div class="col-sm-6">
+            <div class="result" id="rubyRails">
+              <h2>Ruby to Rails Track</h2>
+                <p>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.
+                </p>
+            </div>
+            <div class="result" id="phpDrupal">
+              <h2>PHP to Drupal Track</h2>
+              <p>PHP is most used in content-heavy websites with relatively little user interaction. The most popular content management systems - Wordpress, Drupal, and Joomla - are all written in PHP, and everything from local restaurants' websites up through large complex government deployments are built with these tools. If you're keen to work for an agency that builds websites for clients, or if you like the idea of building out sites for brands, businesses, and organizations, PHP is a great direction to go.
+              </p>
+            </div>
+            <div class="result" id="javaAndroid">
+              <h2>Java and Android Development Track</h2>
+                <p>Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has very been popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.
+                </p>
+            </div>
+            <div class="result" id="cssDesign">
+              <h2>CSS and Design Track</h2>
+                <p>The CSS (Cascading Style Sheets) course builds on the fundamentals from Intro to Programming. It teaches students how to style web pages using complex, responsive layouts, all the while exposing them to the latest CSS tools, tricks, and features used every day by front-end developers and designers.<br><br>
+                CSS is one of the core languages of the web and is an integral part of front-end development. CSS – along with HTML and JavaScript – helps front-end developers control what the end user of a website can see and do.
+                </p>
+            </div>
+            <div class="result" id="cNet">
+              <h2>C# to .NET Track</h2>
+                <p>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.
+                </p>
+            </div>
+          </div>
 <!-- END RESULTS -->
+        </div>
+<!-- END ROW -->
     </div>
+<!-- END CONTAINER -->
   </body>
 </html>

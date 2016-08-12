@@ -93,28 +93,48 @@ $(document).ready(function() {
 // End Business Logic
 // Begin User Interface logic
 
+
+// figure out how get the submit to trigger a nice error message if they don't actually submit any answers!
+
     if (rubyRails === phpDrupal) {
       alert("You're tied between Ruby and .php!")
       $(".result").hide();
       $("#rubyRails").show();
       $("#phpDrupal").show();
+      $('html, body').animate({
+          scrollTop: $(".result").offset().top
+      }, 2000);
 // Is there a cool way to get all the ties, e.g. rubyRails === * or something?
     } else if (cNet >= rubyRails && cNet >= phpDrupal && cNet >= javaAndroid && cNet >= cssDesign) {
       $(".result").hide();
       $("#cNet").show();
+      $('html, body').animate({
+          scrollTop: $("#cNet").offset().top
+      }, 2000);
     } else if (rubyRails >= phpDrupal && rubyRails >= javaAndroid && rubyRails >= cssDesign && rubyRails >= cNet) {
       $(".result").hide();
       $("#rubyRails").show();
+      $('html, body').animate({
+          scrollTop: $("#rubyRails").offset().top
+      }, 2000);
     } else if (phpDrupal >= rubyRails && phpDrupal >= javaAndroid && phpDrupal >= cssDesign && phpDrupal >= cNet) {
       $(".result").hide();
       $("#phpDrupal").show();
+      $('html, body').animate({
+          scrollTop: $("#phpDrupal").offset().top
+      }, 2000);
     } else if (javaAndroid >= rubyRails && javaAndroid >= phpDrupal && javaAndroid >= cssDesign && javaAndroid >= cNet) {
       $(".result").hide();
       $("#javaAndroid").show();
+      $('html, body').animate({
+          scrollTop: $("#javaAndroid").offset().top
+      }, 2000);
     } else if (cssDesign >= rubyRails && cssDesign >= phpDrupal && cssDesign >= javaAndroid && cssDesign >= cNet) {
-       $(".result").hide();
+      $(".result").hide();
       $("#cssDesign").show();
-
+      $('html, body').animate({
+          scrollTop: $("cssDesign").offset().top
+      }, 2000);
     }
   });
 });

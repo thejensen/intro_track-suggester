@@ -1,40 +1,40 @@
-.result {
-  display: none;
-}
 
-.row{
-  padding-left: 50px;
-}
 
-.question {
-  padding-top: 20px;
-}
 
-button {
-  padding-left: 100px;
+body {
+  background-image: url("../img/silly.jpg");
+  -webkit-background-size: cover;
 }
 
 .heading {
   text-align: center;
   background-color: rgba(255, 255, 255, .6);
-  padding: 20px;
-  margin: 20px;
-}
-
-.col-form-legend {
-  width: 15em;
-}
-
-ul {
-  list-style-type: circle;
-  text-align: left;
-}
-
-body {
-  background-image: url("../img/notes.jpeg");
-  -webkit-background-size: cover;
+  padding: 10px;
+  margin: 10px;
 }
 
 form {
   background-color: rgba(255, 255, 255, .8);
+}
+
+.result {
+  display: none;
+  background-color: rgba(255, 255, 255, .8);
+}
+
+.row {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.question {
+  padding: 15px;
+}
+
+.form-check {
+  padding-left: 10px;
+}
+
+button {
+  margin: 1em;
 }
