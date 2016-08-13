@@ -141,7 +141,7 @@ $(document).ready(function() {
       $(".result").hide();
       $("#cssDesign").show();
       $('html, body').animate({
-          scrollTop: $("cssDesign").offset().top
+          scrollTop: $("#cssDesign").offset().top
       }, 2000);
     }
   });
